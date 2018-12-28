@@ -1,0 +1,53 @@
+import React, { Component } from 'react';
+import {Text, View,StyleSheet,Dimensions} from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+let {height,width} = Dimensions.get('window');
+const styles = StyleSheet.create({
+  headingText:{
+    textAlign:'center',
+    fontSize: 20,
+    color:'#2B4F7F',
+    marginTop: height*0.03
+  },
+  firstRow:{
+    flex:2,
+    flexDirection:'row',
+    marginTop:height*0.03,
+    maxHeight:height*0.1,
+    justifyContent:'space-around'
+  },
+  viewStyle:{
+    flexDirection:'column',
+    justifyContent:'flex-start',
+    alignItems:"center"
+  }
+})
+export default class TabThree extends Component {
+  
+    render() {
+      return (
+        <View style={styles.headerStyle}>
+        <View >
+            <Text style={styles.headingText}>What you are looking for?</Text>
+        </View>
+        <View style={styles.firstRow}>
+          <Icon name="home" size={40} color="#2B4F7F" />
+          <Icon name="home" size={40} color="#2B4F7F" />
+          <Icon name="home" size={40} color="#2B4F7F" />
+        </View>
+        <View style={styles.firstRow}>
+          <Icon name="home" size={40} color="#2B4F7F" />
+          <Icon name="home" size={40} color="#2B4F7F" />
+          <Icon name="home" size={40} color="#2B4F7F" />
+        </View>
+        <View style={styles.firstRow}>
+          <Icon name="home" size={40} color="#2B4F7F" />
+          <Icon name="home" size={40} color="#2B4F7F" />
+          <Icon name="home" size={40} color="#2B4F7F" />
+        </View>
+
+        </View>
+      );
+    }
+  }
